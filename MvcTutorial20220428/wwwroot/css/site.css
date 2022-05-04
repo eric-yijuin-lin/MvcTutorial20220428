@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*CSS 選取器的符號
+    # 代表用 id 找目標
+    . 代表用 class 找目標
+*/
+/*#RGB*/
+#css-demo-id {
+    background-color: aqua;
+    color:#555;
+}
+/*#RRGGBB*/
+.css-demo-class {
+    color: #ff0055;
+    font-size: xx-large;
+}

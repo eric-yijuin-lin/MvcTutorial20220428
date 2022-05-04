@@ -1,0 +1,35 @@
+﻿自訂的 css（wwwroot/css/site.css）
+<div id="css-demo-id">CSS Selector 1: 用 ID 找套用對象 => 使用井字號（#）</div>
+<div class="css-demo-class">CSS Selector 2: 用 class 找套用對象 => 使用點號（.）</div>
+<br />
+
+<h3>使用 bootstrap（wwwroot/lib/bootstrap/dist/css/bootstrap.css）</h3>
+<h3>bootstrap 都用 class 找對象套用（.）</h3>
+<div class="border border-3 border-primary rounded">
+    class="border" => 外框通用設定
+    class="border-3" => 外框寬度設定（1~5）
+    class="border-primary" => 外框顏色設定（primary, success, warning, danger, info）
+    class="rounded" => 框框圓角
+</div>
+<br />
+
+<div class="bg-info text-danger">
+    <p>class="bg-info" => 背景顏色設定（primary, success, warning, danger, info, light）</p>
+    <p>class="text-danger" => 背景顏色設定（primary, success, warning, danger, info, light）</p>
+</div>
+<br />
+
+1/2  1/4  1/4
+
+@*網格系統（Grid System）*@
+@*允許區塊元素水平擺放，而且會幫我們做 RWD（響應式網頁樣式）*@
+<div class="row">@*row 就是橫列*@
+    @*col-sm 小（samll）螢幕適用*@
+    @*col-md 中（medium）螢幕適用*@
+    @*col-lg 大（large）螢幕適用*@
+    @*在一個 row 裡面，column 比例（等分）的總和必須等於 12*@
+    <div class="col-md-6 my-1 border border-5">div 姊姊（6/12）</div>
+    <div class="col-md-2 my-1 border border-5">div 哥哥（2/12）</div>
+    <div class="col-md-2 my-1 border border-5">div 妹妹（2/12）</div>
+    <div class="col-md-2 my-1 border border-5">div 弟弟（2/12）</div>
+</div>
